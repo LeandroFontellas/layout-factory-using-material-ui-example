@@ -54,10 +54,8 @@ export const SideNav = () => {
           type="button"
           onClick={() => back()}
         >
-          <ArrowBackIcon />
-          <span className="text-white font-gilroy-bold ml-3 text-lg">
-            Voltar
-          </span>
+          <ArrowBackIcon style={{ color: 'white' }} />
+          <span className="text-white font-gilroy-bold ml-3 text-lg">Back</span>
         </button>
       </Toolbar>
       <Box className="py-10">

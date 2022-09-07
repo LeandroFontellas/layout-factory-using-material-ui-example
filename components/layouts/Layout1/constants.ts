@@ -7,11 +7,11 @@ export const drawerWidth = 240;
 export const drawerHeight = 400;
 export const sideNavOptionsMap = {
   Home: HomeIcon,
-  Perfil: PersonIcon,
-  'Convidar Staff': PersonAddIcon,
-  Torneios: EmojiEventsIcon,
+  Profile: PersonIcon,
+  'Invite Staff': PersonAddIcon,
+  Ranking: EmojiEventsIcon,
 };
-export const sideNavHrefs = ['home', 'profile', 'friends', 'waiting room'];
+export const sideNavHrefs = ['home', 'profile', 'friends', 'ranking'];
 export const sideNavKeys = Object.keys(
   sideNavOptionsMap,
 ) as (keyof typeof sideNavOptionsMap)[];
