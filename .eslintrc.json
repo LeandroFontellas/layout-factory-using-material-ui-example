@@ -1,15 +1,16 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -49,11 +50,22 @@
             }
          ],
          "import/prefer-default-export":"off",
-         "react/require-default-props":"off"
+         "react/require-default-props":"off",
+         "react/jsx-props-no-spreading":"off",
+         "react/function-component-definition":"off",
+         "import/no-unresolved": "error"
     },
     "settings": {
         "import/resolver": {
-          "typescript": {}
+          "typescript": {
+            "alwaysTryTypes": true
+          }
+        },
+        "import/parsers": {
+          "@typescript-eslint/parser": [
+            ".ts",
+            ".tsx"
+          ]
         }
     }
 }
